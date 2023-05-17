@@ -1,21 +1,13 @@
-Shared Dependencies:
+1. Vercel Deployment Configuration: Both "/.vercelignore" and "/vercel.json" files share the Vercel deployment configuration. They are used to define the deployment settings and ignore certain files during the deployment process.
 
-1. Base URL: `https://api.yait.io/v1` - This is the base URL for all API requests and is shared across all API related files.
+2. README.md: This file shares the deployment instructions that will be used in the deployment process on Vercel. It's not directly linked to other files but provides necessary information for the deployment.
 
-2. API Endpoints: `/kb/qa`, `/kb/search`, `/kb/podcasts` - These are the endpoints for the API requests and are shared across the respective API files.
+3. Vercel SVG: The "/public/vercel.svg" file is the Vercel logo that will be used in the "/components/VercelButton.js" file for the one-click-deployment button.
 
-3. Request Methods: `POST`, `GET` - These are the HTTP methods used for the API requests and are shared across the respective API files.
+4. VercelButton Component: The "/components/VercelButton.js" file shares the button component that will be used for one-click-deployment on Vercel. It uses the Vercel logo from "/public/vercel.svg" and will be used in the main application file.
 
-4. Request Parameters: `query`, `size` - These are the parameters used in the request body for the API requests and are shared across the respective API files.
+5. Function Names: The function for one-click-deployment in "/components/VercelButton.js" will be shared across the application.
 
-5. Response Data: The response data from the API requests is shared across the respective form components for display.
+6. DOM Element IDs: The ID of the one-click-deployment button in "/components/VercelButton.js" will be shared across the application for styling and functionality purposes.
 
-6. shadcn-ui Components: These are used for styling and design across all the files.
-
-7. Form Components: `FormQA.js`, `FormSearch.js`, `FormPodcasts.js` - These are the form components used in the `index.js` file.
-
-8. CSS Styles: `globals.css`, `Home.module.css`, `Form.module.css` - These are the CSS stylesheets used across all the files for styling.
-
-9. Function Names: Functions to handle form submissions and API requests will be shared across the respective form and API files. The exact names will depend on the implementation, but could include functions like `handleSubmit`, `postQuestion`, `searchKB`, `getPodcasts`, etc.
-
-10. DOM Element IDs: IDs for form elements and display containers will be shared across the respective form and `index.js` files. The exact names will depend on the implementation, but could include IDs like `qaForm`, `searchForm`, `podcastsForm`, `qaDisplay`, `searchResults`, `podcastsList`, etc.
+7. Message Names: Any messages or alerts related to the deployment process will be shared across "/.vercelignore", "/vercel.json", and "/components/VercelButton.js".
